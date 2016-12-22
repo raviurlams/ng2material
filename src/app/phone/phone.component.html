@@ -1,0 +1,9 @@
+<span [formGroup]="phoneForm">
+	<label for="phone" class="col-sm-2 control-label">
+	    Phone</label>
+	<div class="col-sm-9">
+	    <input type="text" class="form-control" formControlName="phone" placeholder="Enter Phone #" maxlength="15"
+	     (blur)="formatePhno(phoneForm.controls.phone)">
+	    <control-messages [control]="phoneForm.controls.phone"></control-messages>
+	</div>
+</span>

@@ -1,0 +1,201 @@
+{
+  "status": "success",
+  "data": {
+    "_id": "5816b8ec7878f9414d7018f1",
+    "customerNbr": 1,
+    "path": [
+      "USA",
+      "TX",
+      "AUSTIN"
+    ],
+    "customerType": "web",
+    "customerDescr": "cash",
+    "name": {
+      "fname": "John",
+      "lname": "Doe"
+    },
+    "addresses": [
+      {
+        "addressType": "billing",
+        "contact": [
+          {
+            "name": "Jim Rogan",
+            "phone": "2334425656"
+          },
+          {
+            "name": "Debbie Howzkey",
+            "phone": "2334425656"
+          }
+        ],
+        "instructions": [
+          "monthly cycle",
+          "fixed"
+        ],
+        "addressIDs": [
+          123,
+          234,
+          567
+        ],
+        "phy": [
+          {
+            "nbr": 323,
+            "street": "ennis ct",
+            "city": "kansas",
+            "state": "TX",
+            "zip": 76343,
+            "country":"USA",
+            "default": "Y"
+          },
+          {
+            "nbr": 643,
+            "street": "sugarland lane",
+            "city": "buffalo",
+            "state": "LA",
+            "zip": 97454,
+            "country":"Inida",
+            "default": "N"
+          },
+          {
+            "nbr": 522,
+            "street": "redvine lane",
+            "city": "rome",
+            "state": "FL",
+            "zip": 32673,
+            "country":"UK",
+            "default": "N"
+          }
+        ]
+      },
+      {
+        "addressType": "mailing",
+        "contact": [
+          {
+            "name": "Jay Knocker",
+            "phone": "2334425656"
+          },
+          {
+            "name": "Miranda Blackwell",
+            "phone": "2334425656"
+          }
+        ],
+        "instructions": [
+          "monthly cycle",
+          "fixed"
+        ],
+        "addressIDs": [
+          123,
+          234,
+          567
+        ],
+        "phy": [
+          {
+            "nbr": 323,
+            "street": "ennis ct",
+            "city": "kansas",
+            "state": "KS",
+            "zip": 76343,
+            "country":"USA",
+            "default": "Y"
+          },
+          {
+            "nbr": 1243,
+            "street": "MARTHALLI lane",
+            "city": "buffalo",
+            "state": "LA",
+            "zip": 97454,
+            "country":"UK",
+            "default": "N"
+          }
+        ]
+      },
+      {
+        "addressType": "domicile",
+        "contact": [
+          {
+            "name": "Jay Knocker",
+            "phone": "2334425656"
+          },
+          {
+            "name": "Miranda Blackwell",
+            "phone": "2334425656"
+          }
+        ],
+        "instructions": [
+          "monthly cycle",
+          "fixed"
+        ],
+        "addressIDs": [
+          123,
+          234,
+          567
+        ],
+        "phy": [
+          {
+            "nbr": 323,
+            "street": "ennis ct",
+            "city": "AUSTIN",
+            "state": "TX",
+            "zip": 76343,
+            "country":"USA",
+            "default": "Y"
+          },
+          {
+            "nbr": 88989,
+            "street": "HSR layout",
+            "city": "buffalo",
+            "state": "LA",
+            "zip": 97454,
+            "country":"UK",
+            "default": "N"
+          }
+        ]
+      }
+    ],
+    "phone": [
+      "223-224-8888",
+      "552-232-5654",
+      "232-545-7646",
+      "239-234-7762"
+    ],
+    "bank": [
+      {
+        "accountName": "amex",
+        "accountType": "CC",
+        "accountNbr": "2344244424424244",
+        "expirtyDt": "12202017",
+        "issuedBy": "amex",
+        "remainingBal": 2000,
+        "wtd": 200,
+        "mtd": 800,
+        "ytd": 18000,
+        "ytdPmts": 120000,
+        "ytddeposits": 120000,
+        "city": "atlanta",
+        "state": "GA",
+        "zip": 33024,
+        "country": "USA"
+      },
+      {
+        "accountName": "firstUSA",
+        "accountType": "check",
+        "accountNbr": "646442446444",
+        "expirtyDt": "11222020",
+        "issuedBy": "firstUSA",
+        "remainingBal": 2000,
+        "wtd": 200,
+        "mtd": 800,
+        "ytd": 18000,
+        "ytdPmts": 0,
+        "ytddeposits": 120000,
+        "city": "houston",
+        "state": "tx",
+        "zip": 33024,
+        "country": "USA"
+      }
+    ],
+    "custStatus": {
+      "review": "customer is well reviewed",
+      "purchase": "customer purchases a lot"
+    }
+  }
+}

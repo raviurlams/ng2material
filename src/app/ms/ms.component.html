@@ -1,0 +1,203 @@
+<div class="container">
+    <md-tab-group class="tab-group" md-dynamic-height [selectedIndex]="activeLinkIndex">
+        <md-tab>
+            <template md-tab-label>Member Info</template>
+            <div class="col-sm-5">
+                <md-input class="full-width" [(ngModel)]="filterText" placeholder="Search anything" dividerColor="accent">
+                </md-input>
+            </div>
+            <div class="col-sm-1">
+                <!-- <span class="glyphicon glyphicon-search add-icon"></span> -->
+                <span class="glyphicon glyphicon-plus  add-icon pull-right" (click)="addtest()"></span>
+               <!--  <span class="glyphicon glyphicon-refresh add-icon pull-right" (click)="resetAddress()"></span> -->
+            </div>
+            <!-- Address Form -->
+            <form role="form" class="form-horizontal col-sm-12" [formGroup]="memberForm" novalidate (ngSubmit)="save(memberForm.value, memberForm.valid)">
+                
+
+                <div  id="testaddresses" formArrayName="testaddresses">
+                    <div *ngFor="let testAddress of memberForm.controls.testaddresses.controls; let i=index;">
+                        
+                        <div class="form-group col-sm-12" [formGroup]="testAddress">
+                            <md-input placeholder="addressType" autocomplete="off" formControlName="addressType">
+                            </md-input>
+                            <control-messages [control]="testAddress.controls.addressType"></control-messages>    
+                        </div>
+                        <div [formGroup]="testAddress.controls.contacts">
+                            <div class="form-group col-sm-12">
+                                <div class="col-sm-6">
+                                    <md-input placeholder="Name" autocomplete="off" formControlName="name">
+                                    </md-input>
+                                    <control-messages [control]="testAddress.controls.contacts.controls.name"></control-messages>
+                                </div>
+                                <div class="col-sm-6">
+                                    <md-input placeholder="Phone" autocomplete="off" formControlName="phone" (blur)="formatePhno(testAddress.controls.contacts.controls.phone)">
+                                    </md-input>
+                                    <control-messages [control]="testAddress.controls.contacts.controls.phone"></control-messages>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6" *ngIf="customersDatasource.length > 0">
+                        <h3>Customer</h3>
+                        <table class="table table-hover table-bordered table-inverse ">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th>Zip</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let customer of customersDatasource  | filter: filterText;" (click)="showContactInfo(customer.id)">
+                                    <td>{{customer.id}}</td>
+                                    <td>{{customer.fname}}</td>
+                                    <td>{{customer.lname}}</td>
+                                    <td>{{customer.city}}</td>
+                                    <td>{{customer.state}}</td>
+                                    <td>{{customer.country}}</td>
+                                    <td>{{customer.zip}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <md-input class="full-width" disabled formControlName="id">
+                        </md-input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        <md-input placeholder="First name" autocomplete="off" formControlName="fname">
+                        </md-input>
+                        <control-messages [control]="memberForm.controls.fname"></control-messages>
+                    </div>
+                    <div class="col-sm-3">
+                        <md-input placeholder="Last name" autocomplete="off" formControlName="lname">
+                        </md-input>
+                        <control-messages [control]="memberForm.controls.lname"></control-messages>
+                    </div>
+                </div>
+                <!-- Billing Component -->
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <label class="font-18">Billing Address : </label>
+                        <!-- (click)="addAddress('billingaddresses')" -->
+                        <span class="glyphicon glyphicon-plus pull-right add-icon" (click)="open('billing','billingaddresses')"></span>
+                    </div>
+                </div>
+                <div id="billingaddresses" formArrayName="billingaddresses">
+                    <div *ngFor="let address of memberForm.controls.billingaddresses.controls; let i=index;">
+                        <div class="col-sm-12">
+                            <div class="col-sm-6">
+                                <span class="glyphicon glyphicon-remove pull-right remove-icon" *ngIf="memberForm.controls.billingaddresses.controls.length > 1" (click)="removeAddress(i,'billingaddresses')"></span>
+                            </div>
+                        </div>
+                        <div [formGroupName]="i">
+                            <address [group]="memberForm.controls.billingaddresses.controls[i]"></address>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Billing Component -->
+                <!-- Mailing Component -->
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <label class="font-18">Mailing Address : </label>
+                        <span class="glyphicon glyphicon-plus pull-right add-icon" (click)="open('MAILING','mailingaddresses')"></span>
+                    </div>
+                </div>
+                <div id="mailingaddresses" formArrayName="mailingaddresses">
+                    <div *ngFor="let address of memberForm.controls.mailingaddresses.controls; let i=index">
+                        <div class="col-sm-12">
+                            <div class="col-sm-6">
+                                <span class="glyphicon glyphicon-remove pull-right remove-icon" *ngIf="memberForm.controls.mailingaddresses.controls.length > 1" (click)="removeAddress(i,'mailingaddresses')"></span>
+                            </div>
+                        </div>
+                        <div [formGroupName]="i">
+                            <address [group]="memberForm.controls.mailingaddresses.controls[i]"></address>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Mailing Component -->
+                <!-- Residentail Component -->
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <label class="font-18">Residentail Address : </label>
+                        <span class="glyphicon glyphicon-plus pull-right add-icon" (click)="open('DOMICILE','domicileaddresses')"></span>
+                    </div>
+                </div>
+                <div id="domicileaddresses" formArrayName="domicileaddresses">
+                    <div *ngFor="let address of memberForm.controls.domicileaddresses.controls; let i=index">
+                        <div class="col-sm-12">
+                            <div class="col-sm-6">
+                                <span class="glyphicon glyphicon-remove pull-right remove-icon" *ngIf="memberForm.controls.domicileaddresses.controls.length > 1" (click)="removeAddress(i,'domicileaddresses')"></span>
+                            </div>
+                        </div>
+                        <div [formGroupName]="i">
+                            <address [group]="memberForm.controls.domicileaddresses.controls[i]"></address>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Residentail Component -->
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-info pull-right" [disabled]="!memberForm.valid">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <!-- End of Address Form -->
+        </md-tab>
+        <md-tab>
+            <template md-tab-label>Banking Info</template>
+            <form role="form" class="form-horizontal col-sm-12">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <md-input class="full-width" placeholder="Customer Name">
+                        </md-input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <md-input class="full-width" placeholder="Bank Name">
+                        </md-input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <md-input class="full-width" placeholder="A.c No">
+                        </md-input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        <md-input placeholder="Town / City">
+                        </md-input>
+                    </div>
+                    <div class="col-sm-2">
+                        <md-input placeholder="State">
+                        </md-input>
+                    </div>
+                    <div class="col-sm-1">
+                        <md-input #postalCode maxLength="5" placeholder="Zip">
+                            <md-hint align="end">{{postalCode.characterCount}} / 5</md-hint>
+                        </md-input>
+                    </div>
+                </div>
+                <!-- End of Banking Coponent -->
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-info pull-right">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </md-tab>
+    </md-tab-group>
+</div>

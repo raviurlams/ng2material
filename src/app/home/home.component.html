@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div id="sidebar" class="col-md-4">
+        <h3 class="well">Customers</h3>
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <a href="#">
+                    <Tree #tree [nodes]="treeDatasource">
+                        <template #treeNodeTemplate let-node>
+                            <span title="{{node.data.subTitle}}" (click)="show(node.data)">{{ node.data.name }}</span>
+                        </template>
+                    </Tree>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div *ngIf="customersDatasource.length > 0">
+            <h3>Customer</h3>
+            <table class="table table-hover table-bordered table-inverse ">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Zip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let customer of customersDatasource;" (click)="displayContactDetails(customer.id)">
+                        <td>{{customer.id}}</td>
+                        <td>{{customer.fname}}</td>
+                        <td>{{customer.lname}}</td>
+                        <td>{{customer.city}}</td>
+                        <td>{{customer.state}}</td>
+                        <td>{{customer.country}}</td>
+                        <td>{{customer.zip}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="accountsDatasource.length > 0">
+            <h3>Accounts</h3>
+            <table class="table table-hover table-bordered table-inverse ">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>A.C Type</th>
+                        <th>A.C No</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let account of accountsDatasource;" (click)="displayAccountDetails(account.accountNbr)">
+                        <td>{{account.accountName}}</td>
+                        <td>{{account.accountType}}</td>
+                        <td>{{account.accountNbr}}</td>
+                        <td>{{account.city}}</td>
+                        <td>{{account.state}}</td>
+                        <td>{{account.zip}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

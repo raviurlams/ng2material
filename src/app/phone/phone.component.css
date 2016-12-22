@@ -1,0 +1,13 @@
+.add-remove{
+    background: #e94a4a;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 21px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 10px;
+    vertical-align: top;
+    line-height: 100%;
+    border-radius: 5px;  
+}

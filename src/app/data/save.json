@@ -1,0 +1,42 @@
+{    
+    "customerNbr": 3,
+    "customerType": "web",
+    "customerDescr": "cash",
+    "name": {
+      "fname": "John",
+      "lname": "Doe"
+    },
+    "address": [
+      {
+        "nbr": 5100,
+        "street": "circle ct",
+        "city": "houston",
+        "state": "TX",
+        "zip": 33023
+      },
+      {
+        "nbr": 3430,
+        "street": "hawkley lane",
+        "city": "houston",
+        "state": "TX",
+        "zip": 33023
+      },
+      {
+        "nbr": 2053,
+        "street": "thamesmar lane",
+        "city": "atlanta",
+        "state": "GA",
+        "zip": 22323
+      }
+    ],
+    "phone": [
+      "223-224-8888",
+      "552-232-5654",
+      "232-545-7646",
+      "239-234-7762"
+    ],
+    "custStatus": {
+      "review": "customer is well reviewed ---1",
+      "purchase": "customer purchases a lot --- 1"
+    }
+  }

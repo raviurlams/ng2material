@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "_id": "582c9d63b635312b9a24f373",
+      "addressId": 1,
+      "stNbr": 232,
+      "stName": "Harbory",
+      "stType": "Lane",
+      "stLine": "ste 74",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "33024",
+      "country": "USA"
+    }
+  ]
+}

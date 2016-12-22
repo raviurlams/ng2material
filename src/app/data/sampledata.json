@@ -1,0 +1,84 @@
+{
+    "status": "success",
+    "data": [{
+        "_id": "USA",
+        "ancestors": [],
+        "parent": null
+    }, {
+        "_id": "TX",
+        "ancestors": [
+            "USA"
+        ],
+        "parent": "USA"
+    }, {
+        "_id": "AUSTIN",
+        "ancestors": [
+            "USA",
+            "TX"
+        ],
+        "parent": "TX"
+    }, {
+        "_id": 1,
+        "custName": "ash",
+        "ancestors": [
+            "USA",
+            "TX",
+            "AUSTIN"
+        ],
+        "parent": "AUSTIN"
+    }, {
+        "_id": "HOUSTON",
+        "ancestors": [
+            "USA",
+            "TX"
+        ],
+        "parent": "TX"
+    }, {
+        "_id": 2,
+        "custName": "ravi",
+        "ancestors": [
+            "USA",
+            "TX",
+            "HOUSTON"
+        ],
+        "parent": "HOUSTON"
+    }, {
+        "_id": "FL",
+        "ancestors": [
+            "USA"
+        ],
+        "parent": "USA"
+    }, {
+        "_id": "TAMPA",
+        "ancestors": [
+            "USA",
+            "FL"
+        ],
+        "parent": "FL"
+    }, {
+        "_id": 30,
+        "custName": "saxo",
+        "ancestors": [
+            "USA",
+            "FL",
+            "TAMPA"
+        ],
+        "parent": "TAMPA"
+    }, {
+        "_id": "MIAMI",
+        "ancestors": [
+            "USA",
+            "FL"
+        ],
+        "parent": "FL"
+    }, {
+        "_id": 3,
+        "custName": "john",
+        "ancestors": [
+            "USA",
+            "FL",
+            "MIAMI"
+        ],
+        "parent": "MIAMI"
+    }]
+}

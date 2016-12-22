@@ -1,0 +1,71 @@
+<div>
+    <div class="form-group">
+        <h3>Contacts</h3>
+        <table class="table table-hover table-bordered table-inverse ">
+            <thead>
+                <tr>
+                    <th>Street #</th>
+                    <th>Street Name</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Zip</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let address of addressDatasource;" (click)="dialogRef.close(address)">
+                    <td>{{address.stNbr}}</td>
+                    <td>{{address.stName}}</td>
+                    <td>{{address.city}}</td>
+                    <td>{{address.state}}</td>
+                    <td>{{address.country}}</td>
+                    <td>{{address.zip}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form role="form" class="form-horizontal col-sm-12" [formGroup]="addForm" novalidate (ngSubmit)="dialogRef.close(addForm)">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <md-input placeholder="Street #" autocomplete="off" formControlName="nbr">
+                </md-input>
+                <control-messages [control]="addForm.controls.nbr"></control-messages>
+            </div>
+            <div class="col-sm-6">
+                <md-input placeholder="Street Name" autocomplete="off" formControlName="street">
+                </md-input>
+                <control-messages [control]="addForm.controls.street"></control-messages>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6">
+                <md-input placeholder="Town / City" autocomplete="off" formControlName="city">
+                </md-input>
+                <control-messages [control]="addForm.controls.city"></control-messages>
+            </div>
+            <div class="col-sm-4">
+                <md-input placeholder="State" autocomplete="off" formControlName="state">
+                </md-input>
+                <control-messages [control]="addForm.controls.state"></control-messages>
+            </div>
+            <div class="col-sm-2">
+                <md-input #postalCode maxLength="5" autocomplete="off" placeholder="Zip" formControlName="zip">
+                    <md-hint align="end">{{postalCode.characterCount}} / 5</md-hint>
+                </md-input>
+                <control-messages [control]="addForm.controls.zip"></control-messages>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <md-input class="full-width" autocomplete="off" placeholder="Country" formControlName="country">
+                </md-input>
+                <control-messages [control]="addForm.controls.country"></control-messages>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-info pull-right" [disabled]="!addForm.valid">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

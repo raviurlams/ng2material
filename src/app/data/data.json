@@ -1,0 +1,1079 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "_id": "5816b8fd7878f9414d7018f2",
+      "customerNbr": 2,
+      "path": [
+        "USA",
+        "TX",
+        "HOUSTON"
+      ],
+      "customerType": "TV",
+      "customerDescr": "credit",
+      "name": {
+        "fname": "Richard",
+        "lname": "Marx"
+      },
+      "addresses": [
+        {
+          "addressType": "billing",
+          "contact": [
+            {
+              "name": "Peter Jackson",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Frank Hill",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "NY Plaza",
+              "city": "New York",
+              "state": "NY",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            },
+            {
+              "nbr": 643,
+              "street": "sugarland lane",
+              "city": "buffalo",
+              "state": "NY",
+              "zip": 97454,
+              "country": "USA",
+              "default": "N"
+            },
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "rome",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "N"
+            }
+          ]
+        },
+        {
+          "addressType": "mailing",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "vertigo st",
+              "city": "San Antonio",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        },
+        {
+          "addressType": "domicile",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "vertigo st",
+              "city": "HOUSTON",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        }
+      ],
+      "phone": [
+        "646-623-2244",
+        "434-112-6464",
+        "800-323-8955",
+        "245-644-6446"
+      ],
+      "bank": [
+        {
+          "accountName": "mdna",
+          "accountType": "CC",
+          "accountNbr": "33333333333333333334",
+          "expirtyDt": "11222018",
+          "issuedBy": "mdna",
+          "remainingBal": 1000,
+          "wtd": 100,
+          "mtd": 300,
+          "ytd": 9000,
+          "ytdPmts": 10000,
+          "ytddeposits": 0,
+          "city": "rome",
+          "state": "FL",
+          "zip": 33024,
+          "country": "USA"
+        },
+        {
+          "accountName": "lion",
+          "accountType": "check",
+          "accountNbr": "44444444444444432",
+          "expirtyDt": "11222020",
+          "issuedBy": "visa",
+          "remainingBal": 3000,
+          "wtd": 300,
+          "mtd": 300,
+          "ytd": 3000,
+          "ytdPmts": 0,
+          "ytddeposits": 9000,
+          "city": "kansas",
+          "state": "tx",
+          "zip": 33024,
+          "country": "USA"
+        }
+      ],
+      "custStatus": {
+        "review": "customer is well reviewed",
+        "purchase": "customer purchases a lot"
+      }
+    },
+    {
+      "_id": "5816b8ec7878f9414d7018f1",
+      "customerNbr": 1,
+      "path": [
+        "USA",
+        "TX",
+        "AUSTIN"
+      ],
+      "customerType": "web",
+      "customerDescr": "cash",
+      "name": {
+        "fname": "John",
+        "lname": "Doe"
+      },
+      "addresses": [
+        {
+          "addressType": "billing",
+          "contact": [
+            {
+              "name": "Jim Rogan",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Debbie Howzkey",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "kansas",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            },
+            {
+              "nbr": 643,
+              "street": "sugarland lane",
+              "city": "buffalo",
+              "state": "LA",
+              "zip": 97454,
+              "country": "USA",
+              "default": "N"
+            },
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "rome",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "N"
+            }
+          ]
+        },
+        {
+          "addressType": "mailing",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "kansas",
+              "state": "KS",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        },
+        {
+          "addressType": "domicile",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "AUSTIN",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        }
+      ],
+      "phone": [
+        "223-224-8888",
+        "552-232-5654",
+        "232-545-7646",
+        "239-234-7762"
+      ],
+      "bank": [
+        {
+          "accountName": "amex",
+          "accountType": "CC",
+          "accountNbr": "2344244424424244",
+          "expirtyDt": "12202017",
+          "issuedBy": "amex",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 120000,
+          "ytddeposits": 120000,
+          "city": "atlanta",
+          "state": "GA",
+          "zip": 33024,
+          "country": "USA"
+        },
+        {
+          "accountName": "firstUSA",
+          "accountType": "check",
+          "accountNbr": "646442446444",
+          "expirtyDt": "11222020",
+          "issuedBy": "firstUSA",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 0,
+          "ytddeposits": 120000,
+          "city": "houston",
+          "state": "tx",
+          "zip": 33024,
+          "country": "USA"
+        }
+      ],
+      "custStatus": {
+        "review": "customer is well reviewed",
+        "purchase": "customer purchases a lot"
+      }
+    },
+    {
+      "_id": "5818a1b6c217a80e2494fbf2",
+      "customerNbr": 3,
+      "path": [
+        "USA",
+        "FL",
+        "MIAMI"
+      ],
+      "customerType": "web",
+      "customerDescr": "cash",
+      "name": {
+        "fname": "Steve",
+        "lname": "McQueen"
+      },
+      "addresses": [
+        {
+          "addressType": "billing",
+          "contact": [
+            {
+              "name": "Jim Rogan",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Debbie Howzkey",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "kansas",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            },
+            {
+              "nbr": 643,
+              "street": "sugarland lane",
+              "city": "buffalo",
+              "state": "LA",
+              "zip": 97454,
+              "country": "USA",
+              "default": "N"
+            },
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "rome",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "N"
+            }
+          ]
+        },
+        {
+          "addressType": "mailing",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "kansas",
+              "state": "KS",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        },
+        {
+          "addressType": "domicile",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "MIAMI",
+              "state": "FL",
+              "country": "USA",
+              "zip": 76343,
+              "default": "Y"
+            }
+          ]
+        }
+      ],
+      "phone": [
+        "223-224-8888",
+        "552-232-5654",
+        "232-545-7646",
+        "239-234-7762"
+      ],
+      "bank": [
+        {
+          "accountName": "visaLL",
+          "accountType": "CC",
+          "accountNbr": "444444444444444444444454",
+          "expirtyDt": "12202017",
+          "issuedBy": "chicago",
+          "remainingBal": 4000,
+          "wtd": 400,
+          "mtd": 400,
+          "ytd": 4000,
+          "ytdPmts": 40000,
+          "ytddeposits": 0,
+          "city": "tampa",
+          "state": "FL",
+          "zip": 33024,
+          "country": "USA"
+        },
+        {
+          "accountName": "chase",
+          "accountType": "check",
+          "accountNbr": "555555555555555532",
+          "expirtyDt": "11222020",
+          "issuedBy": "chase",
+          "remainingBal": 6000,
+          "wtd": 600,
+          "mtd": 600,
+          "ytd": 6000,
+          "ytdPmts": 0,
+          "ytddeposits": 70000,
+          "city": "atlanta",
+          "state": "GA",
+          "zip": 33024,
+          "country": "USA"
+        }
+      ],
+      "custStatus": {
+        "review": "customer is well reviewed",
+        "purchase": "customer purchases a lot"
+      }
+    },
+    {
+      "_id": "5818d329c217a80e2494fbf5",
+      "customerNbr": 30,
+      "path": [
+        "USA",
+        "TX",
+        "HOUSTON"
+      ],
+      "customerType": "TV",
+      "customerDescr": "credit",
+      "name": {
+        "fname": "Ethan",
+        "lname": "Hawke"
+      },
+      "addresses": [
+        {
+          "addressType": "billing",
+          "contact": [
+            {
+              "name": "Steve Rich",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Richard Vinha",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "kansas",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            },
+            {
+              "nbr": 643,
+              "street": "sugarland lane",
+              "city": "buffalo",
+              "state": "LA",
+              "zip": 97454,
+              "country": "USA",
+              "default": "N"
+            },
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "rome",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "N"
+            }
+          ]
+        },
+        {
+          "addressType": "mailing",
+          "contact": [
+            {
+              "name": "Frank stevenson",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Tom Remmer",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "Sugar creek",
+              "city": "Houston",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        },
+        {
+          "addressType": "domicile",
+          "contact": [
+            {
+              "name": "Frank stevenson",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Tom Remmer",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "Sugar creek",
+              "city": "Houston",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        }
+      ],
+      "bank": [
+        {
+          "accountName": "amex",
+          "accountType": "CC",
+          "accountNbr": "2344244424424244",
+          "expirtyDt": "12202017",
+          "issuedBy": "amex",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 120000,
+          "ytddeposits": 120000,
+          "city": "atlanta",
+          "state": "GA",
+          "zip": 33024,
+          "country": "USA"
+        },
+        {
+          "accountName": "firstUSA",
+          "accountType": "check",
+          "accountNbr": "646442446444",
+          "expirtyDt": "11222020",
+          "issuedBy": "firstUSA",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 0,
+          "ytddeposits": 120000,
+          "city": "houston",
+          "state": "tx",
+          "zip": 33024,
+          "country": "USA"
+        }
+      ],
+      "phone": [
+        "646-623-2244",
+        "434-112-6464",
+        "800-323-8955",
+        "245-644-6446"
+      ],
+      "custStatus": {
+        "review": "customer is well reviewed",
+        "purchase": "customer purchases a lot"
+      }
+    },
+    {
+      "_id": "582747b66cb86e0916ec8a84",
+      "customerType": "",
+      "customerDescr": "",
+      "customerNbr": "56",
+      "path": [
+        "USA",
+        "FL",
+        "TAMPA"
+      ],
+      "name": {
+        "fname": "ram",
+        "lname": "man"
+      },
+      "addresses": [
+        {
+          "addressType": "billing",
+          "contact": [
+            {
+              "name": "Mike Hargee",
+              "phone": "2334425656"
+            },
+            {
+              "name": "John Plan",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "ennis ct",
+              "city": "kansas",
+              "state": "TX",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            },
+            {
+              "nbr": 643,
+              "street": "sugarland lane",
+              "city": "buffalo",
+              "state": "LA",
+              "zip": 97454,
+              "country": "USA",
+              "default": "N"
+            },
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "rome",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "N"
+            }
+          ]
+        },
+        {
+          "addressType": "mailing",
+          "contact": [
+            {
+              "name": "Urup Blane",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Monster Ball",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "Tampa",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        },
+        {
+          "addressType": "domicile",
+          "contact": [
+            {
+              "name": "Urup Blane",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Monster Ball",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "Tampa",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        }
+      ],
+      "bank": [
+        {
+          "accountName": "amex",
+          "accountType": "CC",
+          "accountNbr": "2344244424424244",
+          "expirtyDt": "12202017",
+          "issuedBy": "amex",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 120000,
+          "ytddeposits": 120000,
+          "city": "atlanta",
+          "state": "GA",
+          "zip": 33024,
+          "country": "USA"
+        },
+        {
+          "accountName": "firstUSA",
+          "accountType": "check",
+          "accountNbr": "646442446444",
+          "expirtyDt": "11222020",
+          "issuedBy": "firstUSA",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 0,
+          "ytddeposits": 120000,
+          "city": "houston",
+          "state": "tx",
+          "zip": 33024,
+          "country": "USA"
+        }
+      ],
+      "phones": [
+        "2323999222"
+      ],
+      "custStatus": {
+        "review": "customer is well reviewed",
+        "purchase": "customer purchases a lot"
+      }
+    },
+    {
+      "_id": "58195b47c217a80e2494fbff",
+      "customerNbr": 4,
+      "path": [
+        "USA",
+        "FL",
+        "MIAMI"
+      ],
+      "customerType": "",
+      "customerDescr": "",
+      "name": {
+        "fname": "Princeton",
+        "lname": "Halloway"
+      },
+      "addresses": [
+        {
+          "addressType": "billing",
+          "contact": [
+            {
+              "name": "Peter Halliday",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Swanson East",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "Hawkley Lane",
+              "city": "MIAMI",
+              "state": "FL",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            },
+            {
+              "nbr": 643,
+              "street": "sugarland lane",
+              "city": "buffalo",
+              "state": "LA",
+              "zip": 97454,
+              "country": "USA",
+              "default": "N"
+            },
+            {
+              "nbr": 522,
+              "street": "redvine lane",
+              "city": "rome",
+              "state": "FL",
+              "zip": 32673,
+              "country": "USA",
+              "default": "N"
+            }
+          ]
+        },
+        {
+          "addressType": "mailing",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "Harlboro Ct",
+              "city": "MIAMI",
+              "state": "FL",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        },
+        {
+          "addressType": "domicile",
+          "contact": [
+            {
+              "name": "Jay Knocker",
+              "phone": "2334425656"
+            },
+            {
+              "name": "Miranda Blackwell",
+              "phone": "2334425656"
+            }
+          ],
+          "instructions": [
+            "monthly cycle",
+            "fixed"
+          ],
+          "addressIDs": [
+            123,
+            234,
+            567
+          ],
+          "phy": [
+            {
+              "nbr": 323,
+              "street": "Harlboro Ct",
+              "city": "MIAMI",
+              "state": "FL",
+              "zip": 76343,
+              "country": "USA",
+              "default": "Y"
+            }
+          ]
+        }
+      ],
+      "bank": [
+        {
+          "accountName": "amex",
+          "accountType": "CC",
+          "accountNbr": "2344244424424244",
+          "expirtyDt": "12202017",
+          "issuedBy": "amex",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 120000,
+          "ytddeposits": 120000,
+          "city": "MIAMI",
+          "state": "FL",
+          "zip": 33024,
+          "country": "USA"
+        },
+        {
+          "accountName": "firstUSA",
+          "accountType": "check",
+          "accountNbr": "646442446444",
+          "expirtyDt": "11222020",
+          "issuedBy": "firstUSA",
+          "remainingBal": 2000,
+          "wtd": 200,
+          "mtd": 800,
+          "ytd": 18000,
+          "ytdPmts": 0,
+          "ytddeposits": 120000,
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip": 33024,
+          "country": "USA"
+        }
+      ],
+      "phone": [
+        "242"
+      ],
+      "custStatus": {
+        "review": "fdasfasd",
+        "purchase": "asfasdfafsd"
+      }
+    }
+  ]
+}

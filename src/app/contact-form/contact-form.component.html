@@ -1,0 +1,142 @@
+<div class="container-fluid">   
+    <div id="main" class="col-md-8">
+        <h1>&nbsp;</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- -->
+                <form class="form-horizontal" [formGroup]="contactForm" novalidate (ngSubmit)="save(contactForm.value, contactForm.valid)">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                                    </span> Customer Name</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="form-group">
+                                                    <label for="custnbr" class="col-sm-2 control-label">Customer Number</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Auto Generated" formControlName="customerNbr" maxlength="10">
+                                                        <control-messages [control]="contactForm.controls.customerNbr"></control-messages>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="fname" class="col-sm-2 control-label">First Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" maxlength="50" formControlName="fname" placeholder="Enter First Name">
+                                                        <!-- <small [hidden]="contactForm.controls.fname.valid || (contactForm.controls.fname.pristine && !submitted)" class="text-danger">First Name is required </small> -->
+                                                        <control-messages [control]="contactForm.controls.fname"></control-messages>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lname" class="col-sm-2 control-label">Last Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" maxlength="50" formControlName="lname" placeholder="Enter Last Name">
+                                                        <control-messages [control]="contactForm.controls.lname"></control-messages>
+                                                    </div>
+                                                </div>
+                                                <div id="addresses" formArrayName="addresses">
+                                                    <div *ngFor="let address of contactForm.controls.addresses.controls; let i=index">
+                                                        <div>
+                                                            <span class="ph-remove" *ngIf="contactForm.controls.addresses.controls.length > 1" (click)="removeAddress(i)"></span>
+                                                        </div>
+                                                        <div [formGroupName]="i">
+                                                            <address [group]="contactForm.controls.addresses.controls[i]"></address>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <a data-toggle="collapse" data-parent="#accordion"><span class="btn btn-primary" (click)="addAddress()">Add</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div *ngFor="let address of contactForm.controls.phones.controls; let i=index">
+                                                        <div class="form-group">
+                                                            <app-phone [group]="contactForm.controls.phones.controls[i]"></app-phone>
+                                                            <button *ngIf="contactForm.controls.phones.controls.length > 1" class="ph-remove" (click)="removePhoneItem(i)">X</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <a data-toggle="collapse" data-parent="#accordion"><span class="btn btn-primary" (click)="addPhone()">Add</span></a>
+                                                            <!-- <span class="text-danger">Please enter valid number</span> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="btn btn-primary">Continue</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                                </span> Customer Banking Information</a>
+                            </h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                                </span>Customer Transactions</a>
+                            </h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                                </span> Customer Review</a>
+                            </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="form-group">
+                                                    <label for="review" class="col-sm-2 control-label">Review</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" maxlength="200" formControlName="review" placeholder="Enter Review">
+                                                        <control-messages [control]="contactForm.controls.review"></control-messages>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="purchase" class="col-sm-2 control-label">Purchase</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" maxlength="200" formControlName="purchase" placeholder="Enter Purchase status">
+                                                        <control-messages [control]="contactForm.controls.purchase"></control-messages>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                        <button type="submit" class="btn btn-primary pull-right" [disabled]="!contactForm.valid">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- -->
+            </div>
+        </div>
+    </div>
+</div>
