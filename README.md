@@ -10,11 +10,13 @@
 3. Install the the latest beta version of the Ionic CLI:
     ```
     npm install -g angular-cli@latest
+    
    ```
   
-4. Install the dependencies      
+4. Install the dependencies   
+   ```
     npm install
-   
+    ```
     
 5. Start the app in the browser
     ```
