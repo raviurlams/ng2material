@@ -12,18 +12,9 @@
     npm install -g angular-cli@latest
    ```
   
-4. Install the dependencies
-    ```
-    npm install --save lodash
-    
-    npm install --save @angular/forms 
-
-    npm install --save angular2-tree-component
-
-    npm install --save ng2-material @angular2-material/core
-    
+4. Install the dependencies      
     npm install
-    ```
+   
     
 5. Start the app in the browser
     ```
